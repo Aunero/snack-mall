@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--[if lt IE 9]>
+        <script type="text/javascript" src="{dede:global.cfg_cmspath/}/skin/js/html5.js"></script>
+        <![endif]-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="author" content="order by M169 www.lanrenzhijia.com">
+<script type="text/javascript" src="{dede:global.cfg_cmspath/}/skin/js/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_cmspath/}/skin/css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_cmspath/}/skin/css/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_cmspath/}/skin/css/global.css">
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_cmspath/}/skin/css/style.css">
+<script type="text/javascript" src="{dede:global.cfg_cmspath/}/skin/js/owl.carousel.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_cmspath/}/skin/js/wow.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_cmspath/}/skin/js/main.js"></script>
+</head>
+<body>
+<!-------------------------------------- 头部开始 --------------------------------------> 
+{dede:include filename="head.htm"/} 
+<!-------------------------------------- 头部结束 -------------------------------------->
+<div class="index_owl">
+  <div class="owl">
+    <div class="owl_cur"> <span class="prev"></span> <span class="next"></span> </div>
+    <div class="banner owlCarousel">
+      {dede:arclist row='5' titlelen='36' typeid='20'}
+      <div class="item">
+        <div class="img1"><a href="[field:url/]"><img src="[field:litpic/]"/></a></div>
+      </div>
+      {/dede:arclist} </div>
+  </div>
+</div>
+<!-------------------------------------- 内容开始 -------------------------------------->
+<div class="mainer"> {dede:channelartlist typeid='6,6'}
+  <div class="page page1">
+    <div class="wrap">
+      <div class="page_tit">
+        <h3 class="wow fadeInUp" data-wow-delay=".1s"><span><em>热门推荐</em></span></h3>
+        <p class="wow fadeInUp" data-wow-delay=".2s">HOT RECOMMEND</p>
+      </div>
+      <div class="explosive">
+        <div class="owl explosive_owl">
+          <div class="owl_cur"> <span class="prev"></span><span class="next"></span> </div>
+          <div class="explosive_items owlCarousel wow fadeInUp" data-wow-delay=".1s"> {dede:arclist titlelen='50' flag='c'}
+            <div class="item">
+              <div class="explosive_list">
+                <h4>NO.[field:global.autoindex/]</h4>
+                <a href="[field:arcurl/]">
+                <div class="img"> <img src="[field:picname/]"/> </div>
+                <div class="web">
+                  <div class="text">
+                    <h3>[field:title/]</h3>
+                    <p>[field:typename/]</p>
+                  </div>
+                  <div class="more">
+                    <label>详情</label>
+                  </div>
+                </div>
+                </a> </div>
+            </div>
+            {/dede:arclist} </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="wrap">
+      <div class="page_tit">
+        <h3 class="wow fadeInUp" data-wow-delay=".1s"><span><em>{dede:field name='typename'/}</em></span></h3>
+        <p class="wow fadeInUp" data-wow-delay=".2s">WAREHOUSE</p>
+      </div>
+      <div class="warehouse">
+        <div class="left">
+          <div class="tit"> <span>系列分类</span> </div>
+          <div class="list">
+            <ul class="wow_list">
+              {dede:channel type='son' currentstyle="
+              <li class='on wow fadeInUp'><a href='~typelink~'><i></i>~typename~</a></li>
+              "}
+              <li class="wow fadeInUp"><a href="[field:typeurl/]"><i></i>[field:typename/]</a></li>
+              {/dede:channel}
+            </ul>
+            <div class="line"></div>
+            <div class="more"> <a href="{dede:field name='typeurl'/}">更多</a> </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="list">
+            <ul class="wow_list">
+              {dede:arclist row='6' titlelen='50' orderby='pubdate'}
+              <li class="wow fadeInUp"> <a href="[field:arcurl/]">
+                <div class="img"> <img src="[field:picname/]"/> </div>
+                <div class="web">
+                  <p>[field:title/]
+                    <label>详情</label>
+                  </p>
+                </div>
+                </a> </li>
+              {/dede:arclist}
+            </ul>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  {/dede:channelartlist}
+  
+  {dede:channelartlist typeid='1,1'}
+  <div class="page page2">
+    <div class="index_about">
+      <div class="page_tit">
+        <h3 class="wow fadeInUp" data-wow-delay=".1s"><span><em>{dede:field name='typename'/}</em></span></h3>
+        <p class="wow fadeInUp" data-wow-delay=".3s">ABOUT US</p>
+      </div>
+      <div class="list wow_list">
+        <ul>
+          <li class="wow fadeInUp">
+            <h3>106<em>+</em></h3>
+            <p>品牌成立106年</p>
+          </li>
+          <li class="wow fadeInUp">
+            <h3>500<em>+</em></h3>
+            <p>零食专卖店全球500多家</p>
+          </li>
+          <li class="wow fadeInUp">
+            <h3>600<em>+</em></h3>
+            <p>高端美味零食多达600多个品种</p>
+          </li>
+          <li class="wow fadeInUp">
+            <h3>2000<em>+</em></h3>
+            <p>全球2000多万优秀员工</p>
+          </li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <div class="web wow fadeInUp" data-wow-delay=".1s">
+        <p>{dede:sql sql='Select content from dede_arctype where id=1'}
+          [field:content function='cn_substr(html2text(@me),600)'/]...
+          {/dede:sql}</p>
+        <div class="more"> <a href="{dede:field name='typeurl'/}">更多</a> </div>
+      </div>
+    </div>
+  </div>
+  {/dede:channelartlist}
+  {dede:channelartlist typeid='15,15'}
+  <div class="page">
+    <div class="wrap">
+      <div class="page_tit">
+        <h3 class="wow fadeInUp" data-wow-delay=".1s"><span><em>{dede:field name='typename'/}</em></span></h3>
+        <p class="wow fadeInUp" data-wow-delay=".3s">DYNAMIC</p>
+      </div>
+      <div class="index_news">
+        <div class="left wow fadeInUp" data-wow-delay=".1s">
+          <div class="tit"> {dede:type typeid='16'}
+            <h3>[field:typename/]</h3>
+            {/dede:type} </div>
+          {dede:arclist typeid='16' row='1' titlelen='50' orderby='pubdate'}
+          <div class="img"> <a href="[field:arcurl/]"></a> <img src="[field:picname/]"/> </div>
+          <div class="web">
+            <h4><a href="[field:arcurl/]">[field:title/]</a><span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span></h4>
+            <p>[field:description function="cn_substr(@me,160)"/]...</p>
+          </div>
+          {/dede:arclist} </div>
+        <div class="right wow fadeInUp" data-wow-delay=".1s">
+          <div class="tit"> {dede:type typeid='17'}
+            <h3>[field:typename/]</h3>
+            {/dede:type} </div>
+          <div class="list">
+            <ul>
+              {dede:arclist typeid='17' row='3' titlelen='50' orderby='pubdate'}
+              <li>
+                <div class="img"> <a href="[field:arcurl/]"></a> <img src="[field:picname/]"/> </div>
+                <div class="web">
+                  <div class="wd_w"> <span>问</span>
+                    <h4><a href="[field:arcurl/]">[field:title/]</a></h4>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="wd_d"> <span>答</span>
+                    <p><a href="[field:arcurl/]">[field:description function="cn_substr(@me,140)"/]...</a></p>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </li>
+              {/dede:arclist}
+            </ul>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="more"> <a href="{dede:field name='typeurl'/}">更多</a> </div>
+      </div>
+    </div>
+  </div>
+  {/dede:channelartlist} </div>
+<!-------------------------------------- 内容结束 --------------------------------------> 
+<!-------------------------------------- 尾部开始 --------------------------------------> 
+{dede:include filename="footer.htm"/}
+</body>
+</html>

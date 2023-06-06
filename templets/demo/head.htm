@@ -1,0 +1,18 @@
+<div class="header">
+  <div class="wrap">
+    <div class="logo"><a href="{dede:global.cfg_cmspath/}/"><img src="{dede:global.cfg_cmspath/}/skin/images/logo.png" /></a></div>
+    <div class="menu">
+      <ul>
+        <li {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='on'":@me="";{/dede:field}><a href="{dede:global.cfg_cmspath/}/">网站首页</a></li>
+        {dede:channel type='top' currentstyle="
+        <li class='on'><a href='~typelink~'>~typename~</a></li>
+        "}
+        <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+        {/dede:channel}
+      </ul>
+    </div>
+    <div class="menu_wrap"></div>
+    <div class="tel"><span>{dede:global.cfg_tel/}</span></div>
+    <div class="clear"></div>
+  </div>
+</div>

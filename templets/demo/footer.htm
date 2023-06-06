@@ -1,0 +1,51 @@
+<div class="footer">
+  <div class="foot_xx">
+    <div class="wrap">
+      <div class="left">
+        <div class="ft_logo"> <a href="{dede:global.cfg_cmspath/}/"><img src="{dede:global.cfg_cmspath/}/skin/images/logo.png" /></a> </div>
+        <div class="nav">
+          <ul>
+            <li><a href="{dede:global.cfg_cmspath/}/">网站首页</a></li>
+            {dede:channel type='top' currentstyle="
+            <li><a href='~typelink~'>~typename~</a></li>
+            "}
+            <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+            {/dede:channel}
+          </ul>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="ewm"> <img src="{dede:global.cfg_cmspath/}/skin/images/ewm.jpg"/> </div>
+        <div class="web">
+          <p>地址：</p>
+          <p>{dede:global.cfg_add/}</p>
+          <div class="ft_tel">
+            <p>电话：</p>
+            <p><span>{dede:global.cfg_tel/}</span></p>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="ft_bq">
+    <p>{dede:global.cfg_powerby/}   网站备案号：<a href="http://www.beian.miit.gov.cn/" target="_blank" rel="nofollow">{dede:global.cfg_beian/}</a> <a href="/sitemap.xml" target="_blank">XML地图</a> <a href="http://www.lanrenzhijia.com" target="_blank">网站源码</a></p>
+  </div>
+</div>
+<!-------------------------------------- 尾部结束 -------------------------------------->
+<div class="full">
+  <ul>
+    <li><a href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.cfg_qq/}&site=qq&menu=yes"><span class="span1"></span>
+      <label>在线QQ</label>
+      </a></li>
+    <li><a href="#"><span class="span2"></span>
+      <label>{dede:global.cfg_tel/}</label>
+      </a></li>
+    <li><a href="#"><span class="span3"></span>
+      <label class="lbl_img"><img src="{dede:global.cfg_cmspath/}/skin/images/ewm.jpg"></label>
+      </a></li>
+    <li><a href="javascript:void(0)" class="gotop" onclick="$('html,body').stop().animate({scrollTop:0},800)"><span class="span4"></span></a></li>
+  </ul>
+</div>
